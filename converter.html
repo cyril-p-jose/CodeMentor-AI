@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Code Converter | CodeMentor AI</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+CodeMentor AI
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="executor.html">Executor</a></li>
+<li><a href="converter.html">Converter</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
+</nav>
+
+<section class="converter-page">
+
+<h1>AI Code Converter</h1>
+
+<p>
+Convert code between programming languages instantly.
+</p>
+
+<div class="glass converter-container">
+
+<div class="converter-controls">
+
+<select id="fromLanguage">
+<option value="Python">Python</option>
+<option value="C">C</option>
+<option value="Java">Java</option>
+<option value="JavaScript">JavaScript</option>
+</select>
+
+<span class="arrow">➡</span>
+
+<select id="toLanguage">
+<option value="Java">Java</option>
+<option value="Python">Python</option>
+<option value="C">C</option>
+<option value="JavaScript">JavaScript</option>
+</select>
+
+<button id="convertBtn">
+Convert Code
+</button>
+
+</div>
+
+<textarea
+id="sourceCode"
+placeholder="Paste source code here..."
+></textarea>
+
+<h3>Converted Code</h3>
+
+<pre id="convertedCode"></pre>
+
+<div class="converter-actions">
+
+<button id="copyConverted">
+Copy Code
+</button>
+
+<button id="downloadConverted">
+Download
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/con
