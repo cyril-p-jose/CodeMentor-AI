@@ -6,7 +6,13 @@
 }
 
 body{
-    background:#060b18;
+    background:
+    linear-gradient(
+    135deg,
+    #050816,
+    #0f172a,
+    #081229
+    );
     color:white;
     overflow-x:hidden;
 }
@@ -423,4 +429,16 @@ margin:20px auto;
 100%{
 transform:rotate(360deg);
 }
+}
+.glass{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    transition:0.3s ease;
+}
+
+.glass:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(0,255,204,.3);
 }
