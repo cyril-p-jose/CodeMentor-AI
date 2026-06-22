@@ -7,7 +7,7 @@
 // Replace with your Gemini API Key
 // =====================================
 
-const API_KEY = "PASTE_YOUR_GEMINI_API_KEY_HERE";
+const API_KEY = "AQ.Ab8RN6LfhjwhpO61gFECzD7wbLhZ5vGWU1BSConTYrqH68tTGw";
 
 const generateBtn = document.getElementById("generateBtn");
 const questionInput = document.getElementById("question");
