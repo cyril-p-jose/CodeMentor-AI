@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Executor | CodeMentor AI</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-code"></i>
+CodeMentor AI
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="executor.html">Executor</a></li>
+<li><a href="converter.html">Converter</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
+</nav>
+
+<section class="executor-page">
+
+<h1>Code Executor</h1>
+
+<p>
+Run JavaScript and Python code directly in your browser.
+</p>
+
+<div class="glass executor-container">
+
+<div class="executor-top">
+
+<select id="language">
+
+<option value="javascript">
+JavaScript
+</option>
+
+<option value="python">
+Python
+</option>
+
+</select>
+
+<button id="runBtn">
+▶ Run Code
+</button>
+
+<button id="clearBtn">
+🗑 Clear Output
+</button>
+
+</div>
+
+<textarea
+id="codeInput"
+placeholder="Write or paste your code here..."
+></textarea>
+
+<div class="output-box">
+
+<h3>Output</h3>
+
+<pre id="output"></pre>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+
+<script src="js/executor.js"></script>
+
+</body>
+</html>
