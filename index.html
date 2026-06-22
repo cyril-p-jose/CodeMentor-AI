@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMentor AI | Intelligent Programming Assistant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            CodeMentor AI
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="executor.html">Executor</a></li>
+            <li><a href="converter.html">Converter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                🚀 AI Powered Programming Assistant
+            </span>
+
+            <h1>
+                Generate Code in
+                <span>Python, C, Java & JavaScript</span>
+            </h1>
+
+            <p>
+                Ask any programming question and instantly receive
+                explanations, algorithms, complexity analysis,
+                and code solutions in multiple languages.
+            </p>
+
+            <div class="search-box glass">
+
+                <textarea
+                    id="question"
+                    placeholder="Example: Write a program to find the largest element in an array"></textarea>
+
+                <button id="generateBtn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Generate Solution
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Results -->
+    <section class="results-section">
+
+        <div class="glass result-card">
+
+            <h2>Explanation</h2>
+
+            <div id="explanation">
+                Your AI generated explanation will appear here.
+            </div>
+
+        </div>
+
+        <div class="glass result-card">
+
+            <h2>Algorithm</h2>
+
+            <div id="algorithm">
+                Step-by-step algorithm will appear here.
+            </div>
+
+        </div>
+
+        <div class="glass result-card">
+
+            <h2>Complexity Analysis</h2>
+
+            <div id="complexity">
+                Time and Space Complexity will appear here.
+            </div>
+
+        </div>
+
+        <!-- Tabs -->
+
+        <div class="glass code-section">
+
+            <div class="tabs">
+
+                <button class="tab-btn active" data-tab="python">
+                    Python
+                </button>
+
+                <button class="tab-btn" data-tab="c">
+                    C
+                </button>
+
+                <button class="tab-btn" data-tab="java">
+                    Java
+                </button>
+
+                <button class="tab-btn" data-tab="javascript">
+                    JavaScript
+                </button>
+
+            </div>
+
+            <div class="code-container">
+
+                <pre id="python" class="code-block active">
+Python code will appear here...
+                </pre>
+
+                <pre id="c" class="code-block">
+C code will appear here...
+                </pre>
+
+                <pre id="java" class="code-block">
+Java code will appear here...
+                </pre>
+
+                <pre id="javascript" class="code-block">
+JavaScript code will appear here...
+                </pre>
+
+            </div>
+
+            <div class="actions">
+
+                <button class="copy-btn">
+                    <i class="fa-regular fa-copy"></i>
+                    Copy Code
+                </button>
+
+                <button class="download-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Download
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <div class="feature glass">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI Code Generation</h3>
+            <p>Generate code instantly.</p>
+        </div>
+
+        <div class="feature glass">
+            <i class="fa-solid fa-code"></i>
+            <h3>Multi Language</h3>
+            <p>Python, C, Java, JavaScript.</p>
+        </div>
+
+        <div class="feature glass">
+            <i class="fa-solid fa-bug"></i>
+            <h3>Debugging</h3>
+            <p>Find and fix coding issues.</p>
+        </div>
+
+        <div class="feature glass">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Optimization</h3>
+            <p>Improve performance instantly.</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>CodeMentor AI</h3>
+
+        <p>
+            Intelligent Programming Assistant for Students & Developers.
+        </p>
+
+        <p>
+            © 2026 CodeMentor AI
+        </p>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
