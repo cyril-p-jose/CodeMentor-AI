@@ -320,3 +320,92 @@ cursor:pointer;
 padding:50px;
 text-align:center;
 }
+/* ==========================
+EXECUTOR PAGE
+========================== */
+
+.executor-page{
+width:90%;
+margin:auto;
+padding:50px 0;
+}
+
+.executor-page h1{
+font-size:3rem;
+color:#00ffcc;
+margin-bottom:10px;
+}
+
+.executor-page p{
+opacity:.8;
+margin-bottom:30px;
+}
+
+.executor-container{
+padding:25px;
+}
+
+.executor-top{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+.executor-top select{
+padding:12px;
+border:none;
+border-radius:10px;
+background:#0d1324;
+color:white;
+}
+
+.executor-top button{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+#runBtn{
+background:#00ffcc;
+color:black;
+}
+
+#clearBtn{
+background:#ff4d4d;
+color:white;
+}
+
+#codeInput{
+width:100%;
+height:350px;
+background:#0d1324;
+color:white;
+border:none;
+outline:none;
+padding:20px;
+border-radius:15px;
+resize:vertical;
+font-family:monospace;
+font-size:15px;
+}
+
+.output-box{
+margin-top:25px;
+background:#0d1324;
+padding:20px;
+border-radius:15px;
+}
+
+.output-box h3{
+color:#00ffcc;
+margin-bottom:10px;
+}
+
+#output{
+white-space:pre-wrap;
+word-wrap:break-word;
+font-family:monospace;
+}
