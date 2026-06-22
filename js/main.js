@@ -65,6 +65,13 @@ generateBtn.addEventListener("click", async () => {
     }
 
     generateBtn.innerHTML = "Generating...";
+    explanationBox.innerHTML = `
+<div class="loader"></div>
+<p>Generating solution...</p>
+`;
+
+algorithmBox.innerHTML = "";
+complexityBox.innerHTML = "";
     generateBtn.disabled = true;
 
     try {
