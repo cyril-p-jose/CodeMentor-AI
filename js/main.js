@@ -128,8 +128,9 @@ if (!response.ok) {
             "No response received.";
 
         parseResponse(text);
-
-        saveToHistory(question);
+if (response.ok) {
+    saveToHistory(question);
+}
 
     } catch (error) {
 
