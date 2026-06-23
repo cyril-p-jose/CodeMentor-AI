@@ -6,7 +6,6 @@
 
 // =====================================
 
-const API_KEY ="AQ.Ab8RN6J9Tjxw-BQl4yEOPZmzQgvgBXW-tscOCnmlkREBYNPc9Q";
 
 const generateBtn = document.getElementById("generateBtn");
 const questionInput = document.getElementById("question");
