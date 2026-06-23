@@ -115,6 +115,8 @@ ${question}
     })
 });
         const data = await response.json();
+        console.log(data);
+alert(JSON.stringify(data));
 
 console.log("Status:", response.status);
 console.log("Response:", data);
@@ -124,10 +126,14 @@ if (!response.ok) {
 }
 
         const text =
-            data.candidates?.[0]?.content?.parts?.[0]?.text ||
-            "No response received.";
+    data.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
-        parseResponse(text);
+console.log("AI RESPONSE:");
+console.log(text);
+
+alert(text.substring(0, 500));
+
+        explanationBox.textContent = text;
 if (response.ok) {
     saveToHistory(question);
 }
