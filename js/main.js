@@ -129,6 +129,13 @@ ${question}
 
         const data = await response.json();
 
+console.log("Status:", response.status);
+console.log("Response:", data);
+
+if (!response.ok) {
+    throw new Error(JSON.stringify(data));
+}
+
         const text =
             data.candidates?.[0]?.content?.parts?.[0]?.text ||
             "No response received.";
